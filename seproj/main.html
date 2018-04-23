@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>LectureLink</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+    <link rel="stylesheet" href="countdown.css">
+    <link rel="stylesheet" href="piechart.css">
+</head>
+
+<body style="margin: 0;">
+
+    <div class="st3" class="container">
+        <a href="dashboard.html">
+            <img src="images/newnewlogo-01.png" width=10%>
+        </a>
+    </div>
+
+    <div class="wrapper">
+        <div class="test">
+            <p class="moduletitle">Binary</p>
+        </div>
+        <div class="test">
+            <p class="moduletitle">MCQ</p>
+        </div>
+        <div class="test">
+            <p class="moduletitle">Class Satisfaction</p>
+        </div>
+        <div class="test">
+            <p class="moduletitle">Timer</p>
+            <div class="timer">
+                <!--<div class="timer__controls">
+                    <button data-time="60" class="timer__button">1</button>
+                    <button data-time="300" class="timer__button">5</button>
+                    <button data-time="900" class="timer__button">15</button>
+                    <button data-time="1200" class="timer__button">30</button>
+                </div>-->
+                <form name="customForm">
+                    <input type="text" name="minutes" class="textbox" placeholder="Enter Minutes" style="width: 60%" autocomplete="off">
+                </form>
+                <div class="display">
+                    <h1 class="display__time-left" style="font-size: 50px; padding-top: 0.2em"></h1>
+                    <p class="display__end-time" style="margin-bottom: 0em"></p>
+                </div>
+            </div>
+        </div>
+        <div class="test">
+            <p class="moduletitle">Outline</p>
+            <ul id="myUL">
+                <div class="flexContainer">
+                    <input type="text" name="fname" class="textbox">
+                    <div class="close">×</div>
+                </div>
+                <div class="flexContainer">
+                    <input type="text" name="fname" class="textbox">
+                    <div class="close">×</div>
+                </div>
+                <div class="flexContainer">
+                    <input type="text" name="fname" class="textbox">
+                    <div class="close">×</div>
+                </div>
+            </ul>
+            <button class="btn3" onclick="newElement()">+</button>
+        </div>
+        <div class="test">
+            <p class="moduletitle">Ranker</p>
+        </div>
+        <div class="CP">
+            <p class="moduletitle">Class Participation</p>
+        </div>
+    </div>
+
+    <script src="countdown.js"></script>
+    <script src="checklist.js"></script>
+</body>
+
+</html>
