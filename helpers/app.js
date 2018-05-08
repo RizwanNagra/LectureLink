@@ -1,6 +1,5 @@
 const express = require('express');
 const path = require('path');
-const exphbs  = require('express-handlebars');
 const methodOverride = require('method-override');
 const flash = require('connect-flash');
 const session = require('express-session');
@@ -11,7 +10,7 @@ const mongoose = require('mongoose');
 const app = express();
 
 // Load routes
-const ideas = require('./routes/ideas');
+//const ideas = require('./routes/ideas');
 const users = require('./routes/users');
 
 // Passport Config
@@ -27,12 +26,6 @@ mongoose.connect(db.mongoURI, {
 })
   .then(() => console.log('MongoDB Connected...'))
   .catch(err => console.log(err));
-
-// Handlebars Middleware
-app.engine('handlebars', exphbs({
-  defaultLayout: 'main'
-}));
-app.set('view engine', 'handlebars');
 
 // Body parser middleware
 app.use(bodyParser.urlencoded({ extended: false }));
